@@ -169,9 +169,3 @@ button:hover {
     color: #555;
     margin: 0.5rem 0;
 }
-.button-icon {
-    width: 20px; /* Tamaño del icono */
-    height: 20px; /* Tamaño del icono */
-    vertical-align: middle; /* Alinea el icono con el texto */
-    margin-right: 8px; /* Espacio entre el icono y el texto */
-}
