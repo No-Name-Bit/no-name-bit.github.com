@@ -114,6 +114,7 @@ button:hover {
 .about-me {
     background: #b2f2bb;
     grid-column: span 2;
+    padding-left: 20px;
 }
 
 .experience {
