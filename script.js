@@ -1,7 +1,7 @@
 function redirectToGithub() {
-    window.location.href = "https://github.com/yourusername"; // Replace with your GitHub link
+    window.location.href = "https://github.com/No-Name-Bit";
 }
 
 function redirectToLinkedIn() {
-    window.location.href = "https://linkedin.com/in/yourusername"; // Replace with your LinkedIn link
+    window.location.href = "https://www.linkedin.com/in/ethan-garcia-chico";
 }
