@@ -1,50 +1,84 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Título de la Página</title>
-    <meta name="description" content="Descripción breve de la página">
-    <link rel="stylesheet" href="styles.css"> <!-- Enlace a tu archivo CSS -->
+    <title>Ethan Garcia's Resume</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div class="container">
+        <!-- Personal Information Block -->
+        <div class="block personal-info">
+            <h1>Ethan Garcia Chico</h1>
+            <h2>Cybersecurity Analyst</h2>
+            <p>+34 664405722 | izangarciachico@gmail.com | Badalona 08911</p>
+        </div>
 
-    <!-- Encabezado -->
-    <header>
-        <h1>Bienvenido a Mi Página Web</h1>
-        <nav>
+        <!-- About Me Block -->
+        <div class="block about-me">
+            <h3>About Me</h3>
+         <p>
+            Cybersecurity professional with a focus on protecting enterprise systems, networks, and sensitive data. I specialize in **Red Team operations**, including penetration testing, ethical hacking, and vulnerability analysis, to identify and exploit security weaknesses. Additionally, I have **Blue Team expertise** in incident response, threat monitoring, and implementing defensive measures to mitigate risks. I enjoy analyzing vulnerabilities, managing incidents, and improving security in IT environments. With experience in implementing security measures in ERP systems, monitoring threats, and ensuring regulatory compliance, I bring a comprehensive approach to cybersecurity by combining offensive and defensive strategies to safeguard critical assets.
+        </p>
+        </div>
+
+        <!-- Experience Block -->
+        <div class="block experience">
+            <h3>Experience</h3>
             <ul>
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#acerca">Acerca de</a></li>
-                <li><a href="#servicios">Servicios</a></li>
-                <li><a href="#contacto">Contacto</a></li>
+                <li>
+                    <h4>Consultant - RSM Spain (Mar 2023 - Nov 2024)</h4>
+                    <p>ERP security assessment, access control implementation, regulatory compliance, integration with security tools, and user training.</p>
+                </li>
+                <li>
+                    <h4>IT Technician - DXC Technology (Nov 2019 - Dec 2020)</h4>
+                    <p>N1 and N2 support, system optimization, security policy enforcement, and threat monitoring.</p>
+                </li>
             </ul>
-        </nav>
-    </header>
+        </div>
 
-    <!-- Contenido Principal -->
-    <main>
-        <section id="inicio">
-            <h2>Inicio</h2>
-            <p>Esta es la sección de inicio de mi página web.</p>
-        </section>
+        <!-- Education Block -->
+        <div class="block education">
+            <h3>Education</h3>
+            <ul>
+                <li>Vocational Training in Microcomputer Systems and Networks - Mila i Fontanals (2018-2020)</li>
+                <li>Web Application Development - Mila i Fontanals (2020-2022)</li>
+                <li>FrontEnd Web Developer - TecnoCampus (Mar 2022 - Mar 2023)</li>
+                <li>Master in Cybersecurity BootCamp - ICT (2025-2025)</li>
+            </ul>
+        </div>
 
-        <section id="acerca">
-            <h2>Acerca de</h2>
-            <p>Información sobre mí o mi empresa.</p>
-        </section>
+        <!-- Skills Block -->
+        <div class="block skills">
+            <h3>Skills</h3>
+            <ul>
+                <li>Firewall, Hardening, Malware</li>
+                <li>Java, Python, JavaScript, Bash, Power Shell, C#</li>
+                <li>Linux, Windows, Pentesting, Incident Response</li>
+                <li>SIEM, Monitoring, Metasploit, NMAP, HTML & CSS, React</li>
+            </ul>
+        </div>
 
-        <section id="servicios">
-            <h2>Servicios</h2>
-            <p>Descripción de los servicios que ofrezco.</p>
-        </section>
+        <!-- Languages Block -->
+        <div class="block languages">
+            <h3>Languages</h3>
+            <ul>
+                <li>French</li>
+                <li>English</li>
+                <li>Spanish</li>
+                <li>Catalan</li>
+            </ul>
+        </div>
 
-        <section id="contacto">
-            <h2>Contacto</h2>
-            <p>Información de contacto y formulario.</p>
-        </section>
-    </main>
+        <!-- Social Links Block -->
+        <div class="block social-links">
+            <h3>Social Links</h3>
+            <button onclick="redirectToGithub()">GitHub</button>
+            <button onclick="redirectToLinkedIn()">LinkedIn</button>
+        </div>
+    </div>
 
-    <!-- Pie de Página -->
-    <footer>
-        <p>&copy; 2023 Mi Página Web. Todos los derechos reservados.</
+    <script src="script.js"></script>
+</body>
+</html>
