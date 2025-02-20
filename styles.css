@@ -21,6 +21,7 @@ body {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     max-width: 1200px;
     width: 90%;
+    margin: 20px;
 }
 
 .block {
@@ -28,6 +29,12 @@ body {
     padding: 1.5rem;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.block:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
 h1, h2, h3, h4 {
@@ -72,37 +79,38 @@ button {
     border-radius: 5px;
     cursor: pointer;
     margin-right: 0.5rem;
+    transition: background 0.3s ease;
 }
 
 button:hover {
     background: #2980b9;
 }
 
-/* Colores pastel */
+/* Colores vibrantes para cada bloque */
 .personal-info {
-    background: #f0f8ff; /* Azul pastel */
+    background: #ffcccb; /* Rojo pastel */
 }
 
 .about-me {
-    background: #fafad2; /* Amarillo pastel */
+    background: #b2f2bb; /* Verde pastel */
 }
 
 .experience {
-    background: #e6ffe6; /* Verde pastel */
+    background: #a2d5f2; /* Azul pastel */
 }
 
 .education {
-    background: #ffe6e6; /* Rojo pastel */
+    background: #ffd8b1; /* Naranja pastel */
 }
 
 .skills {
-    background: #e6f2ff; /* Azul claro pastel */
+    background: #d8bfd8; /* Morado pastel */
 }
 
 .languages {
-    background: #fff0e6; /* Naranja pastel */
+    background: #f0e68c; /* Amarillo pastel */
 }
 
 .social-links {
-    background: #f5e6ff; /* Morado pastel */
+    background: #add8e6; /* Azul claro pastel */
 }
