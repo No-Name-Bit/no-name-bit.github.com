@@ -125,7 +125,6 @@ button:hover {
     padding: 0.5rem; 
 }
 
-
 .experience {
     background: #a2d5f2;
     grid-column: span 2;
@@ -142,7 +141,6 @@ button:hover {
 .languages {
     background: #f0e68c;
 }
-
 
 .experience-list {
     padding: 0;
