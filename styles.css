@@ -118,6 +118,7 @@ button:hover {
     background: #b2f2bb;
     grid-column: span 2;
     padding: 0.1rem; 
+}
 
 .social-links {
     background: #add8e6;
