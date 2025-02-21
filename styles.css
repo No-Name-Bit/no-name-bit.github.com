@@ -17,6 +17,7 @@ body {
     width: 100%;
     padding: 20px 0;
     background: linear-gradient(135deg, #f0f8ff, #c3cfe2); 
+}
 
 .image-container img {
     width: 100%;
