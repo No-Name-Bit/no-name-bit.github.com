@@ -16,8 +16,7 @@ body {
     align-items: center;
     width: 100%;
     padding: 20px 0;
-    background: linear-gradient(135deg, #f0f8ff, #c3cfe2); /* Degradado */
-}
+    background: linear-gradient(135deg, #f0f8ff, #c3cfe2); 
 
 .image-container img {
     width: 100%;
@@ -80,13 +79,12 @@ h3 {
 p, li {
     line-height: 1.6;
     color: #555;
-    margin: 0; /* Eliminar márgenes por defecto */
-}
+    margin: 0; 
 
 ul {
     list-style-type: none;
     padding: 0;
-    margin: 0; /* Eliminar márgenes por defecto */
+    margin: 0; 
 }
 
 li {
@@ -108,24 +106,23 @@ button:hover {
     background: #2980b9;
 }
 
-/* Ajustes para reducir el tamaño vertical de los bloques */
+
 .personal-info {
     background: #ffcccb;
-    padding: 0.1rem; /* Padding reducido */
+    padding: 0.1rem; 
 }
 
 .about-me {
     background: #b2f2bb;
     grid-column: span 2;
-    padding: 0.1rem; /* Padding reducido */
-}
+    padding: 0.1rem; 
 
 .social-links {
     background: #add8e6;
-    padding: 0.5rem; /* Padding reducido */
+    padding: 0.5rem; 
 }
 
-/* Estilos para la experiencia (sin cambios) */
+
 .experience {
     background: #a2d5f2;
     grid-column: span 2;
@@ -143,7 +140,7 @@ button:hover {
     background: #f0e68c;
 }
 
-/* Nuevos estilos añadidos para mejorar la experiencia */
+
 .experience-list {
     padding: 0;
     margin: 0;
@@ -153,7 +150,7 @@ button:hover {
     background: #ffffff;
     padding: 1rem;
     border-radius: 8px;
-    margin-bottom: 20px; /* Separación entre cajas */
+    margin-bottom: 20px; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border: 1px solid rgba(0, 0, 0, 0.1);
 }
@@ -170,8 +167,8 @@ button:hover {
     margin: 0.5rem 0;
 }
 .button-icon {
-    width: 20px; /* Tamaño del icono */
-    height: 20px; /* Tamaño del icono */
-    vertical-align: middle; /* Alinea el icono con el texto */
-    margin-right: 8px; /* Espacio entre el icono y el texto */
+    width: 20px; 
+    height: 20px; 
+    vertical-align: middle;
+    margin-right: 8px; 
 }
