@@ -97,21 +97,17 @@ li {
     margin-bottom: 0.5rem;
 }
 
-.button-container {
-    display: flex;
-    gap: 1rem; /* Espacio entre botones */
-    flex-wrap: wrap; /* Permite que los botones se envuelvan en pantallas pequeñas */
-}
-
 button {
     background: #3498db;
     color: white;
     border: none;
-    padding: 1rem;
+    padding: 0.5rem 1rem;
     border-radius: 5px;
     cursor: pointer;
+    margin-right: 0.5rem;
     transition: background 0.3s ease;
 }
+
 
 button:hover {
     background: #2980b9;
