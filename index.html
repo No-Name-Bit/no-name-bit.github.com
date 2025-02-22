@@ -10,28 +10,37 @@
 <body>
     
     <div class="container">
-        <!--imagen-->
-        <div class="image-container">
-            <img src="imagenes/Red_Team_Boy.jpeg" alt="Red Team trabajando">
-        </div>
         <!-- Personal Information Block -->
+        <div class="image-container">
+            <img src="Red_Team_Boy.jpeg" alt="Red Team trabajando"> 
+        </div>
         <div class="block personal-info">
-            <h1>Ethan Garcia Chico</h1>
-            <h2>Cybersecurity Analyst</h2>
-            <p> ✉️|N0Name0001@protonmail.com| 🏠|Badalona| </p>
+            <h2 id="title">Ethan Garcia Chico</h2>
+            <h3 id="subtitle">Cybersecurity Analyst</h3>
+            <hr>
+        </br>
+        <a href="N0Name0001@protonmail.com">✉ Send me an email</a>
+        <p>🏠 Currently based on Barcelona</p>
+        <p>🐱 Cat lover</p>
+        <p>👽 Hacker in TryHackMe </p>
+        <p>👾 Bethesda fan</p>
         </div>
 
         <!-- About Me Block -->
         <div class="block about-me">
-            <h3>About Me</h3>
-            <p>
-                Cybersecurity professional with a focus on protecting enterprise systems, networks, and sensitive data. I specialize in <b>**Red Team operations**</b>, including penetration testing, ethical hacking, and vulnerability analysis, to identify and exploit security weaknesses. Additionally, I have **Blue Team expertise** in incident response, threat monitoring, and implementing defensive measures to mitigate risks. I enjoy analyzing vulnerabilities, managing incidents, and improving security in IT environments. With experience in implementing security measures in ERP systems, monitoring threats, and ensuring regulatory compliance, I bring a comprehensive approach to cybersecurity by combining offensive and defensive strategies to safeguard critical assets.
-            </p>
+            <h2>About Me</h2>
+            <hr>
+        </br>
+        <p>Cybersecurity professional with a focus on <b>protecting enterprise systems, networks, and sensitive data</b>. I specialize in  <b>Red Team operations</b>, including penetration testing, ethical hacking, and vulnerability analysis, to identify and exploit security weaknesses.</p>
+
+<p>Additionally, I have <b>Blue Team</b> expertise in incident response, threat monitoring, and implementing defensive measures to mitigate risks. I enjoy analyzing vulnerabilities, managing incidents, and improving security in IT environments. With experience in implementing security measures in ERP systems, monitoring threats, and ensuring regulatory compliance, I bring a comprehensive approach to cybersecurity by combining offensive and defensive strategies to safeguard critical assets. </p>
         </div>
 
         <!-- Experience Block -->
         <div class="block experience">
-            <h3>Experience 🚀</h3>
+            <h2>Experience 🚀</h2>
+            <hr>
+        </br>
             <ul class="experience-list">
                 <li class="experience-item">
                     <h4>Consultant - RSM Spain (Mar 2023 - Nov 2024) 💼</h4>
@@ -64,10 +73,12 @@
                 </li>
             </ul>
         </div>
-
+<div class="stack">
         <!-- Education Block -->
         <div class="block education">
-            <h3>Education</h3>
+            <h2>Education</h2>
+            <hr>
+        </br>
             <ul>
                 <li>🎓 Assistant in assembly and maintenance of microcomputer systems - Escola Pia (2017-2018)</li>
                 <li>🎓 Vocational Training in Microcomputer Systems and Networks - Mila i Fontanals (2018-2020)</li>
@@ -79,7 +90,9 @@
 
         <!-- Skills Block -->
         <div class="block skills">
-            <h3>Skills</h3>
+            <h2>Skills</h2>
+            <hr>
+        </br>
             <ul>
                 <li>🔥 Firewall, Hardening, Malware</li>
                 <li>💻 Java, Python, JavaScript, Bash, Power Shell, C#</li>
@@ -90,42 +103,49 @@
 
         <!-- Languages Block -->
         <div class="block languages">
-            <h3>Languages</h3>
+            <h2>Languages</h2>
+            <hr>
+        </br>
             <ul>
                 <li>🇫🇷 French</li>
                 <li>🇬🇧 English</li>
                 <li>🇪🇸 Spanish</li>
-                <li> Catalan</li>
+                <li>🇨🇦 Catalan</li>
             </ul>
         </div>
 
         <!-- Social Links Block -->
+    
         <div class="block social-links">
-            <h3>Social Links</h3>
+            
+            <h2>Social Links</h2>
+            <hr>
+        </br>
+        <div class="botones">
             <button onclick="redirectToGithub()">
-                <img src="imagenes/github.png" alt="GitHub Icon" class="button-icon"> GitHub
+                <img src="github.png" alt="GitHub Icon" class="button-icon"> GitHub
             </button>
-
+        </br>
+        
+            <button>  
+                <i class="fas fa-envelope button-icon"></i><a href="mailto:N0Name0001@protonmail.com">Gmail</a>
+            </button>
+        
+        </br>
             <button onclick="redirectToLinkedIn()">
-                <img src="imagenes/linkedin.png" alt="LinkedIn Icon" class="button-icon"> LinkedIn
+                <img src="linkedin.png" alt="LinkedIn Icon" class="button-icon"> LinkedIn
             </button>
-
+        </br>
             <button onclick="redirectToTryHackMe()">
-                <img src="imagenes/tryhackme.png" alt="TryHackMe Icon" class="button-icon"> TryHackMe
+                <img src="tryhackme.png" alt="TryHackMe Icon" class="button-icon"> TryHackMe
             </button>
-
+        </br>
             <button onclick="redirectToDiscord()">
-                <img src="imagenes/discord.png" alt="Discord Icon" class="button-icon"> Discord
+                <img src="discord.png" alt="Discord Icon" class="button-icon"> Discord
             </button>
-
-            <a href="mailto:N0Name0001@protonmail.com">
-            <button>
-                    <i class="fas fa-envelope button-icon"></i> Gmail
-            </button>
-            </a>
         </div>
     </div>
-
+</div>
     <script src="script.js"></script>
     <script src="responsive.js"></script>
 </body>

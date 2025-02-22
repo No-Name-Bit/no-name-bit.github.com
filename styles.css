@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 body {
-    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
     background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
@@ -14,42 +17,42 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap; 
-    gap: 10px; 
+    flex-wrap: wrap; /* Permite que las imágenes se ajusten en pantallas pequeñas */
+    gap: 10px; /* Espaciado entre imágenes */
     width: 100%;
     padding: 20px 0;
-    background: linear-gradient(135deg, #f0f8ff, #c3cfe2);
+    background: linear-gradient(135deg, #f0f8ff, );
 }
 
 .image-container img {
     width: 100%;
-    max-width: 150px; 
+    max-width: 150px; /* Reducimos el tamaño máximo para móviles */
     height: auto;
     border-radius: 10px;
     transition: transform 0.3s ease;
 }
 
 .image-container img:hover {
-    transform: scale(1.05); 
+    transform: scale(1.05); /* Efecto hover para las imágenes */
 }
 
 .container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px; 
+    grid-template-columns: 1fr 2fr ;
+    gap: 20px; /* Reducimos el gap para pantallas pequeñas */
     background: rgba(255, 255, 255, 0.9);
-    padding: 1.5rem; 
+    padding: 1.5rem; /* Reducimos el padding para móviles */
     border-radius: 15px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    max-width: 1200px; 
+    max-width: 1200px; /* Ajustamos el ancho máximo */
     width: 90%;
     margin: 20px 0;
+
 }
 
 .block {
     background: #ffffff;
     border-radius: 10px;
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     padding: 1rem;
     border: 1px solid rgba(0, 0, 0, 0.1);
@@ -64,14 +67,17 @@ h1, h2, h3, h4 {
     color: #2c3e50;
     margin: 0;
 }
-
+hr{
+    border: 0.5px solid #D0DDD0;
+}
 h1 {
     font-size: 2rem;
     margin-bottom: 0.5rem;
 }
 
 h2 {
-    font-size: 1.5rem;
+    font-family: "Lora", serif;
+    font-size: 2.2rem;
     margin-bottom: 0.5rem;
 }
 
@@ -81,10 +87,12 @@ h3 {
     color: #34495e;
 }
 
-p, li {
+p, li,a {
     line-height: 1.6;
     color: #555;
     margin: 0;
+    font-family: "Quicksand", serif;
+    padding:0.2em;
 }
 
 ul {
@@ -96,54 +104,76 @@ ul {
 li {
     margin-bottom: 0.5rem;
 }
+.botones{
+    display:flex;
+    flex-direction: column;
+    
 
+}
+a {
+    color: inherit;
+    text-decoration: inherit;
+  }
 button {
-    background: #3498db;
-    color: white;
-    border: none;
+    background:transparent;
+    display:inline-block;
+    color: #003092;
+    border: 1px solid #D0DDD0;
     padding: 0.5rem 1rem;
     border-radius: 5px;
     cursor: pointer;
     margin-right: 0.5rem;
     transition: background 0.3s ease;
+    font-family: "Quicksand", serif;
 }
-
-
+#subtitle{
+    font-family: "Quicksand", serif !important;
+}
+#title{
+    font-family: "Lato", serif;
+}
 button:hover {
     background: #2980b9;
 }
 
 .personal-info {
-    background: #ffcccb;
+    
     padding: 1rem;
 }
 
 .about-me {
-    background: #b2f2bb;
+    
     grid-column: span 2;
     padding: 1rem;
 }
 
 .social-links {
-    background: #add8e6;
     padding: 1rem;
 }
 
 .experience {
-    background: #a2d5f2;
+    
     grid-column: span 2;
 }
-
+.stack{
+    display:flex;
+    flex-direction: column;
+    gap: 20px;
+    grid-column: 1 / 2;
+    grid-row: 1 / 4;
+    
+}
 .education {
-    background: #ffd8b1;
+    align-self: start;
 }
 
 .skills {
-    background: #d8bfd8;
+    font-family: "Quicksand", serif;
+    align-self: start;  
 }
 
 .languages {
-    background: #f0e68c;
+    
 }
 
 .experience-list {
@@ -182,20 +212,22 @@ button:hover {
 /* Media Queries para Responsive Design */
 @media (max-width: 768px) {
     .image-container img {
-        max-width: 120px; 
+        max-width: 120px; /* Imágenes más pequeñas en móviles */
     }
 
     .container {
-        grid-template-columns: 1fr; 
-        padding: 1rem;
+        display: flex;
+        flex-direction: column;
     }
-
+    .stack{
+        grid-column: auto;
+    }
     .about-me, .experience {
-        grid-column: span 1; 
+        grid-column: span 1; /* Ocupan una columna en móviles */
     }
 
     h1 {
-        font-size: 1.75rem; 
+        font-size: 1.75rem; /* Títulos más pequeños en móviles */
     }
 
     h2 {
@@ -209,15 +241,15 @@ button:hover {
 
 @media (max-width: 480px) {
     .image-container img {
-        max-width: 100px; 
+        max-width: 100px; /* Imágenes aún más pequeñas en pantallas muy pequeñas */
     }
 
     .block {
-        margin: 0; 
+        margin: 0; /* Eliminamos márgenes adicionales */
     }
 
     button {
-        width: 100%; 
+        width: 100%; /* Botones de ancho completo en móviles */
         margin-bottom: 10px;
     }
 }
